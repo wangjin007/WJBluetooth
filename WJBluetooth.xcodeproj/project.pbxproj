@@ -15,6 +15,9 @@
 		E2AE16B41D13A92E005DA769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AE16B21D13A92E005DA769 /* LaunchScreen.storyboard */; };
 		E2AE16BF1D13A92E005DA769 /* WJBluetoothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AE16BE1D13A92E005DA769 /* WJBluetoothTests.m */; };
 		E2AE16CA1D13A92E005DA769 /* WJBluetoothUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AE16C91D13A92E005DA769 /* WJBluetoothUITests.m */; };
+		E2AE16DA1D13AAFF005DA769 /* WJBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AE16D91D13AAFF005DA769 /* WJBluetooth.m */; };
+		E2EF30961D14067600F0FF6A /* WJCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EF30951D14067600F0FF6A /* WJCallback.m */; };
+		E2EF30991D140BB700F0FF6A /* WJCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EF30981D140BB700F0FF6A /* WJCentralManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		E2AE16C51D13A92E005DA769 /* WJBluetoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJBluetoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2AE16C91D13A92E005DA769 /* WJBluetoothUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJBluetoothUITests.m; sourceTree = "<group>"; };
 		E2AE16CB1D13A92E005DA769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AE16D81D13AAFF005DA769 /* WJBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJBluetooth.h; sourceTree = "<group>"; };
+		E2AE16D91D13AAFF005DA769 /* WJBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJBluetooth.m; sourceTree = "<group>"; };
+		E2EF30941D14067600F0FF6A /* WJCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCallback.h; sourceTree = "<group>"; };
+		E2EF30951D14067600F0FF6A /* WJCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCallback.m; sourceTree = "<group>"; };
+		E2EF30971D140BB700F0FF6A /* WJCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCentralManager.h; sourceTree = "<group>"; };
+		E2EF30981D140BB700F0FF6A /* WJCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCentralManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		E2AE16A31D13A92E005DA769 /* WJBluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				E2AE16D71D13AADA005DA769 /* WJBluetoothCore */,
 				E2AE16A71D13A92E005DA769 /* AppDelegate.h */,
 				E2AE16A81D13A92E005DA769 /* AppDelegate.m */,
 				E2AE16AA1D13A92E005DA769 /* ViewController.h */,
@@ -138,6 +148,19 @@
 				E2AE16CB1D13A92E005DA769 /* Info.plist */,
 			);
 			path = WJBluetoothUITests;
+			sourceTree = "<group>";
+		};
+		E2AE16D71D13AADA005DA769 /* WJBluetoothCore */ = {
+			isa = PBXGroup;
+			children = (
+				E2AE16D81D13AAFF005DA769 /* WJBluetooth.h */,
+				E2AE16D91D13AAFF005DA769 /* WJBluetooth.m */,
+				E2EF30971D140BB700F0FF6A /* WJCentralManager.h */,
+				E2EF30981D140BB700F0FF6A /* WJCentralManager.m */,
+				E2EF30941D14067600F0FF6A /* WJCallback.h */,
+				E2EF30951D14067600F0FF6A /* WJCallback.m */,
+			);
+			name = WJBluetoothCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +230,7 @@
 				TargetAttributes = {
 					E2AE16A01D13A92E005DA769 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6SM7N6V2ZP;
 					};
 					E2AE16B91D13A92E005DA769 = {
 						CreatedOnToolsVersion = 7.3;
@@ -272,7 +296,10 @@
 			files = (
 				E2AE16AC1D13A92E005DA769 /* ViewController.m in Sources */,
 				E2AE16A91D13A92E005DA769 /* AppDelegate.m in Sources */,
+				E2EF30991D140BB700F0FF6A /* WJCentralManager.m in Sources */,
 				E2AE16A61D13A92E005DA769 /* main.m in Sources */,
+				E2EF30961D14067600F0FF6A /* WJCallback.m in Sources */,
+				E2AE16DA1D13AAFF005DA769 /* WJBluetooth.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +442,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WJBluetooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangjin.WJBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +456,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WJBluetooth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wangjin.WJBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +531,7 @@
 				E2AE16D01D13A92E005DA769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2AE16D11D13A92E005DA769 /* Build configuration list for PBXNativeTarget "WJBluetoothTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +540,7 @@
 				E2AE16D31D13A92E005DA769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2AE16D41D13A92E005DA769 /* Build configuration list for PBXNativeTarget "WJBluetoothUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +549,7 @@
 				E2AE16D61D13A92E005DA769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
